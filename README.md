@@ -15,3 +15,6 @@ MagiskGApps maker is an online tool to generate MagiskGApps packages from regula
 ## Known Issues:
 - [ ] Will process zip through both NikGApps and MindTheGApps files if one radio button is selected, and then the other, causeing timeout error
 - [x] NikGApps script leaves all files not needed for MagiskGApps functionality in the zip file
+## This site uses my [Monet Web Adapter](https://github.com/wacko1805/MonetWebAdapter) project!
+If you use an android device, installing the adapter app will allow your dynamic wallpaper colours to be used on the site.
+[Learn more and download here](https://github.com/wacko1805/MonetWebAdapter)

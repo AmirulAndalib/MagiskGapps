@@ -317,5 +317,5 @@ footer img {
   .form-box {
     background-color: var(--secondaryContainer);
     border-radius: var(--radius-med);
-    padding: 2vh 2vw;
+    padding: 2vw 2vw;
   }

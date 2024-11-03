@@ -131,6 +131,7 @@ h1 {
 
 h2, h3 {
   color: var(--onBackground);
+  font-weight: 50;
 }
 
 
@@ -206,7 +207,7 @@ h2, h3 {
 /* Processing Box */
 .console {
   position: relative;
-  background-color: var(--primaryContainer);
+  background-color: var(--background);
   border-radius: var(--radius-med);
   height: 23vh;
   margin-bottom: 5px;
@@ -219,7 +220,7 @@ h2, h3 {
 .console p {
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
-  color: var(--onPrimaryContainer);
+  color: var(--onBackground);
   position: relative;
   bottom: -10px;
   left: 5px;
@@ -310,4 +311,11 @@ footer img {
     margin: 0;
     width: 49.66%;
     margin-bottom: 0;
+  }
+
+
+  .form-box {
+    background-color: var(--secondaryContainer);
+    border-radius: var(--radius-med);
+    padding: 2vh 2vw;
   }

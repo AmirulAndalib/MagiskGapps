@@ -125,8 +125,8 @@ main {
 h1 {
   font-family: 'Tilt Warp', cursive;
   color: var(--primary);
-  font-size: calc(2rem + 1.5vw);
-  padding-left: 15px;
+  font-size: calc(2rem);
+  padding-left: 10px;
 }
 
 h2, h3 {
@@ -152,7 +152,10 @@ h2, h3 {
   transition: 0.1s;
   margin-bottom: 3px;
 }
-
+.collapsible span {
+  display: inline-block;
+  width: 95%;
+}
 .collapsible:hover, .active {
   background-color: var(--tertiary);
   color: var(--onTertiary);
@@ -168,13 +171,11 @@ h2, h3 {
 }
 
 
-
 .collapsible:after {
   content: '\002B';
   color: var(--onPrimary);
   font-weight: var(--font-weight-coll-content);
   float: right;
-  margin-left: 5px;
   transition: 0.2s;
 }
 
@@ -186,9 +187,10 @@ h2, h3 {
   padding: 0 18px;
   transition: 0.1s ease-in-out;
   max-height: 0;
+  width: 100%;
   overflow: hidden;
   border-radius: var(--radius-big);
-  transition: max-height 0.2s ease-out;
+  transition: 0.2s ease-out;
   background-color: var(--secondaryContainer);
   color: var(--onSecondaryContainer);
   margin-bottom: 5px;

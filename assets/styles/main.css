@@ -51,6 +51,7 @@
   background: var(--onSecondary);
     background-clip: content-box;
     border: 7px solid transparent;
+    border-radius: var(--radius-big);
 }
 
 .console::-webkit-scrollbar-thumb {

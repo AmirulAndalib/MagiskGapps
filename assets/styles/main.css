@@ -209,6 +209,7 @@ h2, h3 {
 
 .content b {
   font-weight: 100;
+  color: var(--error);
 }
 .c-open {
   border-radius: var(--radius-sml) var(--radius-sml) var(--radius-big) var(--radius-big);

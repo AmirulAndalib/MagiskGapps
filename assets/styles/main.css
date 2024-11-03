@@ -152,6 +152,8 @@ h2, h3 {
   margin-bottom: 3px;
   padding: 13px 30px;
 }
+
+
 .collapsible span {
   display: inline-block;
   width: 95%;
@@ -159,6 +161,10 @@ h2, h3 {
 .collapsible:hover, .active {
   background-color: var(--tertiary);
   color: var(--onTertiary);
+}
+
+.collapsible:active {
+  border-radius: var(--radius-sml);
 }
 
 .open {

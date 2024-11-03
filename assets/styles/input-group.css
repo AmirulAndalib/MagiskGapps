@@ -27,7 +27,9 @@
     transition: color 200ms ease-in;
     overflow: hidden;
   }
-  
+  .inputGroup label span {
+    transition: 0.1s step-start;
+  }
   .inputGroup label:after {
     width: 32px;
     height: 32px;
@@ -45,7 +47,10 @@
     cursor: pointer;
     transition: all 200ms ease-in;
   }
-  
+  .inputGroup label:active {
+    font-size: 15px;
+    padding: 14.7px 30px;
+  }
   .inputGroup input:checked ~ label {
     background-color: var(--tertiary);
     color: var(--onTertiary);
@@ -94,6 +99,7 @@
     background-color: var(--primary);
     color: var(--onPrimary);
   }
+
   #file{
     margin-left: 5px;
     color: var(--onBackground);

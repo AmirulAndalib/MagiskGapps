@@ -333,3 +333,13 @@ footer img {
   a {
     text-decoration: none;
   }
+
+  .error-box {
+    background-color: #FF4545;
+    border-radius: var(--radius-big);
+    padding: 20px;
+    position: fixed;
+    z-index: 10;
+    top: 30%;
+    margin: 20px;
+  }

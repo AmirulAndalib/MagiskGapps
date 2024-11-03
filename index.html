@@ -20,6 +20,10 @@
     </head>
 
     <body>
+        <div class="error-box" id="error-box">
+            <h3>Please enable JavaScript</h3>
+            <p>This site uses JavaScript to function. MagiskGApps scripts use JavaScript, so this sites functions are currently unavaliable until enabled.</p>
+        </div>
 
         <main>
 
@@ -218,6 +222,8 @@
             actualBtn.addEventListener('change', function(){
             fileChosen.textContent = this.files[0].name
             })
+
+            document.getElementById('error-box').style.display = 'none';
 
         </script>
         <script src="assets/js/collapsible.js"></script>

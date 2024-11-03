@@ -2,12 +2,14 @@ header {
     position: relative; /* Reference for absolutely positioned children */
     padding-left: 10px;
     transition: 0.2s;
+    margin-bottom: 50px;
   }
   
   header h1 {
     margin-bottom: 0;
     padding-left: 0;
     color: var(--onBackground);
+    font-size: 3rem;
   }
   
   header h1 span {

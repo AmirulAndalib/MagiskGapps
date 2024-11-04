@@ -93,13 +93,15 @@
     color: var(--onTertiary);    
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
-    transition: 0.2s;
+    transition: 0.05s;
   }
   .file-desc:hover {
     background-color: var(--primary);
     color: var(--onPrimary);
   }
-
+  .file-desc:active {
+    border-radius: var(--radius-sml);
+  }
   #file{
     margin-left: 5px;
     color: var(--onBackground);
@@ -116,9 +118,11 @@
     background-color: var(--tertiary);
     color: var(--onTertiary);    
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.05s;
   }
-
+  button:active {
+    border-radius: var(--radius-sml);
+  }
   .onSecondary {
     background-color: var(--onSecondaryContainer);
     color: var(--onSecondary);

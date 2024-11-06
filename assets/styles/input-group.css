@@ -5,6 +5,7 @@
     position: relative;
     border-radius: var(--radius-big);
     transition: 0.2s;
+    -webkit-tap-highlight-color: transparent;
   }
   
   .inputGroup:hover {
@@ -94,6 +95,7 @@
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
     transition: 0.05s;
+    -webkit-tap-highlight-color: transparent;
   }
   .file-desc:hover {
     background-color: var(--primary);
@@ -119,6 +121,7 @@
     color: var(--onTertiary);    
     cursor: pointer;
     transition: 0.05s;
+    -webkit-tap-highlight-color: transparent;
   }
   button:active {
     border-radius: var(--radius-sml);

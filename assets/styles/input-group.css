@@ -48,9 +48,8 @@
     cursor: pointer;
     transition: all 200ms ease-in;
   }
-  .inputGroup label:active {
-    font-size: 15px;
-    padding: 14.7px 30px;
+  .inputGroup:active {
+    border-radius: var(--radius-sml);
   }
   .inputGroup input:checked ~ label {
     background-color: var(--tertiary);

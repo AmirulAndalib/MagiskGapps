@@ -168,7 +168,7 @@ h2, h3 {
 }
 
 .open {
-  border-radius: var(--radius-big) var(--radius-big) var(--radius-sml) var(--radius-sml);
+  border-radius: var(--radius-med) var(--radius-med) var(--radius-sml) var(--radius-sml);
   
 }
 
@@ -212,7 +212,7 @@ h2, h3 {
   color: var(--error);
 }
 .c-open {
-  border-radius: var(--radius-sml) var(--radius-sml) var(--radius-big) var(--radius-big);
+  border-radius: var(--radius-sml) var(--radius-sml) var(--radius-med) var(--radius-med);
 }
 
 .c-closed {
@@ -342,6 +342,7 @@ footer img {
     border-radius: var(--radius-med);
     padding: 2vw;
   }
+
   @media screen and (max-width: 850px) {
     .form-box {
       padding: 5vw;

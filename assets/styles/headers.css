@@ -4,6 +4,9 @@ header {
   padding-left: 10px;
   transition: 0.2s;
   margin-bottom: 50px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 header h1 {

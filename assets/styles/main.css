@@ -53,6 +53,16 @@
   background: var(--tertiary);
 }
 
+::-moz-selection { 
+  color: var(--onError);
+  background: var(--error);
+}
+
+::selection {
+  color: var(--onError);
+  background: var(--error);
+}
+
 /* Global Styles */
 * {
   box-sizing: border-box;
@@ -262,6 +272,9 @@ footer {
   margin-top: 25px;
   background-color: var(--secondaryContainer);
   padding: 5vh;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 footer .copywrite,

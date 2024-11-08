@@ -5,7 +5,7 @@
   margin: 10px 0;
   position: relative;
   border-radius: var(--radius-big);
-  transition: background-color 0.2s;
+  transition: 0.1s;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -54,6 +54,7 @@
 
 .inputGroup:active {
   border-radius: var(--radius-sml);
+  
 }
 
 .inputGroup input {
@@ -70,6 +71,7 @@
 
 .inputGroup input:checked ~ label {
   background-color: var(--tertiary);
+  border-radius: var(--radius-big);
   color: var(--onTertiary);
 }
 
@@ -100,7 +102,7 @@ button {
   background-color: var(--tertiary);
   color: var(--onTertiary);
   cursor: pointer;
-  transition: background-color 0.05s, color 0.05s;
+  transition: background-color 0.05s, color 0.05s, 0.1s;
   -webkit-tap-highlight-color: transparent;
 }
 

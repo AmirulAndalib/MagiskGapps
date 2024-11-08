@@ -140,6 +140,7 @@ h2, h3 {
   transition: background-color 0.1s, color 0.1s;
   margin-bottom: 3px;
   padding: 13px 30px;
+  transition: 0.1s;
 }
 
 .collapsible span {

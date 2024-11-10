@@ -3,6 +3,8 @@
 @import url(../fonts/montserrat.css);
 @import url(../fonts/poppins-tilt-warp.css);
 @import url(../fonts/poppins.css);
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
 
 /* Component Imports */
 @import url(headers.css);
@@ -34,12 +36,14 @@
 }
 
 /* Console-specific Scrollbar */
+/* Scrollbar Styles */
 .console::-webkit-scrollbar {
   width: 20px;
+
 }
 
-.console::-webkit-scrollbar-track,
-.console::-webkit-scrollbar-thumb {
+.console::-webkit-scrollbar-track {
+  background: var(--onSecondary);
   background-clip: content-box;
   border: 7px solid transparent;
   border-radius: var(--radius-big);
@@ -47,10 +51,14 @@
 
 .console::-webkit-scrollbar-thumb {
   background: var(--secondary);
+  background-clip: content-box;
+  border: 7px solid transparent;
 }
 
 .console::-webkit-scrollbar-thumb:hover {
   background: var(--tertiary);
+  background-clip: content-box;
+  border: 7px solid transparent;
 }
 
 ::-moz-selection { 

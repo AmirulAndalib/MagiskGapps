@@ -148,6 +148,13 @@ mount_mirrors() {
 
 # Credits
 ui_print "**************************************"
+ui_print "*         MagiskGApps Maker          *"
+ui_print "*   @MagiskGApps.com by @wacko1805   *"
+ui_print "**************************************"
+ui_print " "
+
+ui_print "**************************************"
+ui_print "*             Made Using             *"
 ui_print "*   MMT Extended by Zackptg5 @ XDA   *"
 ui_print "**************************************"
 ui_print " "

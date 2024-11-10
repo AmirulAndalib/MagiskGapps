@@ -1,7 +1,8 @@
+const versionCode = "MindTheGApps.r.1.1";
 // MindTheGApps Script
 $('#extractButton').click(function() {
     console.log('MindTheGApps Selected.');
-    document.getElementById("info").innerHTML += "MindTheGApps Selected. <br>";
+    document.getElementById("info").innerHTML += "Using MGM Converter for MindTheGApps. Version " + versionCode + "<br>";
 
     const fileInput = document.getElementById('zipFileInput');
     const files = fileInput.files;
@@ -98,7 +99,8 @@ Object.values(templateFolder).forEach(fileName => {
                     window.URL.revokeObjectURL(url);
                     document.body.removeChild(a);
                     console.log('Download complete.');
-                    document.getElementById("info").innerHTML += 'Zip file made. File should download shortly!<br></a>';
+                    document.getElementById("info").innerHTML += 'Zip file made. File should download shortly!<br>';
+                    document.getElementById("info").innerHTML += "<b class='red'>If you run into any issues, Please Open an issue on <a class='link' href='https://github.com/wacko1805/MagiskGapps/issues'>GitHub</a> and supply the versioncode: " + versionCode + "</b><br>";
                 });
             });
         });

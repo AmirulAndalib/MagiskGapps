@@ -10,9 +10,11 @@
                 elem.addEventListener("change", function () {
                     if (this.value === 'NikGapps') {
                         loadScript('NikGApps');
+                        document.getElementById("info").innerHTML += "NikGApps Selected. <br>";
 
                     } else if (this.value === 'MindTheGApps') {
                         loadScript('MindTheGApps');
+                        document.getElementById("info").innerHTML += "MindTheGApps Selected. <br>";
                     }
                 });
             });

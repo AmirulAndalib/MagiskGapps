@@ -1,7 +1,8 @@
+const versionCode = "NikGApps.r.1.2";
 // NikGApps Script
 $('#extractButton').click(function() {
     console.log('NikGApps Selected.');
-    document.getElementById("info").innerHTML += "NikGApps Selected. <br>";
+    document.getElementById("info").innerHTML += "Using MGM Converter for NikGApps. Version " + versionCode + "<br>";
 
     const fileInput = document.getElementById('zipFileInput');
     const files = fileInput.files;
@@ -160,6 +161,7 @@ $('#extractButton').click(function() {
                     document.body.removeChild(a);
                     console.log('Download complete.');
                     document.getElementById("info").innerHTML += 'Zip file made. File should download shortly!<br>';
+                    document.getElementById("info").innerHTML += "<b class='red'>If you run into any issues, Please Open an issue on <a class='link' href='https://github.com/wacko1805/MagiskGapps/issues'>GitHub</a> and supply the versioncode: " + versionCode + "</b><br>";
                 }).catch(error => {
                     const errorMessage = 'Error generating zip file: ' + error;
                     console.log(errorMessage);

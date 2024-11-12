@@ -1,4 +1,4 @@
-const versionCode = "MindTheGApps.r.1.1";
+const versionCode = "MindTheGApps.r.1.2";
 // MindTheGApps Script
 $('#extractButton').click(function() {
     console.log('MindTheGApps Selected.');
@@ -87,7 +87,11 @@ Object.values(templateFolder).forEach(fileName => {
             Promise.all(promises).then(function() {
                 console.log('All files extracted. Creating new zip file...');
                 document.getElementById("info").innerHTML += '<h3>All files extracted. Creating new zip file...<br>This may take up to 5 minutes depending on the GApps package size, browser and device.<h3><br>';
-                newZip.generateAsync({type:'blob'}).then(function(blob) {
+                newZip.generateAsync({
+                    type:'blob',
+                    compression: 'DEFLATE'
+                })
+                .then(function(blob) {
                     console.log('New zip file created. Downloading...');
                     document.getElementById("info").innerHTML += 'New zip file created. Downloading...<br>';
                     const url = window.URL.createObjectURL(blob);

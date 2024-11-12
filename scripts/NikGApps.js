@@ -1,4 +1,4 @@
-const versionCode = "NikGApps.r.1.2";
+const versionCode = "NikGApps.r.1.3";
 // NikGApps Script
 $('#extractButton').click(function() {
     console.log('NikGApps Selected.');
@@ -147,7 +147,11 @@ $('#extractButton').click(function() {
                 console.log('All files extracted successfully. Creating new zip file...');
                 document.getElementById("info").innerHTML += '<h3>All files extracted. Creating new zip file...<br>This may take up to 5 minutes depending on the GApps package size, browser, and device.<h3><br>';
                 
-                newZip.generateAsync({type:'blob'}).then(function(blob) {
+                newZip.generateAsync({
+                    type:'blob',
+                    compression: 'DEFLATE'
+                })
+                .then(function(blob) {
                     console.log('New zip file created. Downloading...');
                     document.getElementById("info").innerHTML += 'New zip file created. Downloading...<br>';
                     

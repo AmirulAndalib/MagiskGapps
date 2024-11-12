@@ -238,7 +238,8 @@ h2, h3 {
   border-radius: var(--radius-med);
   height: 23vh;
   margin-bottom: 5px;
-  overflow-y: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column-reverse;
   padding: 15px;
@@ -264,6 +265,19 @@ h2, h3 {
   color: var(--error);
 }
 
+.console .link {
+  color: var(--primary);
+  text-decoration: none;
+  padding: 3px;
+  margin: -3px;
+  border-radius: var(--radius-sml);
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.console .link:hover {
+  color: var(--background);
+  background-color: var(--secondary);
+}
 .red {
   color: var(--error);
 }

@@ -1,4 +1,4 @@
-const versionCode = "MindTheGApps.r.1.2";
+const versionCode = "MindTheGApps.r.1.3";
 // MindTheGApps Script
 $('#extractButton').click(function() {
     console.log('MindTheGApps Selected.');
@@ -84,6 +84,15 @@ Object.values(templateFolder).forEach(fileName => {
             const fileContent = customFile[fileName];
             newZip.file(fileName, fileContent, { binary: true });
         });
+
+        const customLogFile = {
+            'MGM.txt': 'MagiskGApps Maker Log File\nMade using script version: ' + versionCode,
+        };
+        Object.keys(customLogFile).forEach(fileName => {
+            const fileContent = customLogFile[fileName];
+            newZip.file(fileName, fileContent, { binary: true });
+        });
+
             Promise.all(promises).then(function() {
                 console.log('All files extracted. Creating new zip file...');
                 document.getElementById("info").innerHTML += '<h3>All files extracted. Creating new zip file...<br>This may take up to 5 minutes depending on the GApps package size, browser and device.<h3><br>';

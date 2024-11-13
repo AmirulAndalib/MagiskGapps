@@ -136,7 +136,6 @@
 
                         <label class="file-desc" for="zipFileInput">Choose File</label>
                         <br><br>
-                        <span id="file">No file chosen</span>
                         <hr>
                         <p>2. Select the GApps type</p>
 
@@ -212,18 +211,10 @@
                 </p>
             </footer>
         <script>
-            const actualBtn = document.getElementById('zipFileInput');
-
-            const fileChosen = document.getElementById('file');
-
-            actualBtn.addEventListener('change', function(){
-            fileChosen.textContent = this.files[0].name
-            })
-
             document.getElementById('error-box').style.display = 'none';
-
         </script>
         <script src="assets/js/collapsible.js"></script>
         <script src="assets/js/file_chooser.js"></script>
+        <script src="assets/js/form_file_button.js"></script>
     </body>
 </html>

@@ -2,7 +2,7 @@
 ### MagiskGApps Maker converts a regular GApps package into a Magisk flashable package using a the [MagiskGApps.com](https://magiskgapps.com) site.
 
 # How to use: 
-- Download your desired GApps package from the [supported GApps packages]() Below
+- Download your desired GApps package from the [supported GApps packages](https://github.com/wacko1805/MagiskGapps?tab=readme-ov-file#supported-gapps-packages) Below
 - Head to [MagiskGApps.com](https://magiskgapps.com):
     - Upload your file to the site
     - Select your GApps type

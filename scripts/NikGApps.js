@@ -1,4 +1,4 @@
-const versionCode = "NikGApps.r.1.4";
+const versionCode = "NikGApps.r.1.5";
 // NikGApps Script
 $('#extractButton').click(function() {
     console.log('NikGApps Selected.');
@@ -143,7 +143,7 @@ $('#extractButton').click(function() {
             });
 
             const customLogFile = {
-                'MGM.txt': 'MagiskGApps Maker Log File\nMade using script version: ' + versionCode,
+                'MGM.txt': 'MagiskGApps Maker Log File\nMade using script version: ' + versionCode + '\nConverted original file name: ' + ogZipTitle + '\n',
             };
             Object.keys(customLogFile).forEach(fileName => {
                 const fileContent = customLogFile[fileName];
@@ -166,7 +166,7 @@ $('#extractButton').click(function() {
                     const url = window.URL.createObjectURL(blob);
                     const a = document.createElement('a');
                     a.href = url;
-                    a.download = 'MagiskGAppsMaker converted - ' + ogZipTitle + '.zip';
+                    a.download = 'MagiskGAppsMaker converted - ' + ogZipTitleStripped + '.zip';
                     document.body.appendChild(a);
                     a.click();
                     window.URL.revokeObjectURL(url);

@@ -1,4 +1,4 @@
-const versionCode = "MindTheGApps.r.1.3";
+const versionCode = "MindTheGApps.r.1.4";
 // MindTheGApps Script
 $('#extractButton').click(function() {
     console.log('MindTheGApps Selected.');
@@ -86,7 +86,7 @@ Object.values(templateFolder).forEach(fileName => {
         });
 
         const customLogFile = {
-            'MGM.txt': 'MagiskGApps Maker Log File\nMade using script version: ' + versionCode,
+            'MGM.txt': 'MagiskGApps Maker Log File\nMade using script version: ' + versionCode + '\nConverted original file name: ' + ogZipTitle + '\n',
         };
         Object.keys(customLogFile).forEach(fileName => {
             const fileContent = customLogFile[fileName];
@@ -106,7 +106,7 @@ Object.values(templateFolder).forEach(fileName => {
                     const url = window.URL.createObjectURL(blob);
                     const a = document.createElement('a');
                     a.href = url;
-                    a.download = 'MagiskGAppsMaker converted - '+ ogZipTitle +'.zip';
+                    a.download = 'MagiskGAppsMaker converted - '+ ogZipTitleStripped +'.zip';
                     document.body.appendChild(a);
                     a.click();
                     window.URL.revokeObjectURL(url);

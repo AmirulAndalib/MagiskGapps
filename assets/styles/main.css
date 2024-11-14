@@ -147,12 +147,12 @@ h2, h3 {
 /* Collapsible Content */
 .collapsible {
   cursor: pointer;
-  background-color: var(--primary);
+  background-color: var(--primaryContainer);
   font-size: 17px;
   font-family: poppins;
   font-weight: var(--font-weight-coll);
   border-radius: var(--radius-big);
-  color: var(--onPrimary);
+  color: var(--onPrimaryContainer);
   width: 100%;
   text-align: left;
   transition: background-color 0.1s, color 0.1s;

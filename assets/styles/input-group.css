@@ -99,8 +99,8 @@ button {
   font-weight: var(--font-weight-coll);
   border: none;
   border-radius: var(--radius-big);
-  background-color: var(--tertiary);
-  color: var(--onTertiary);
+  background-color: var(--primary);
+  color: var(--onPrimary);
   cursor: pointer;
   transition: background-color 0.05s, color 0.05s, 0.1s;
   -webkit-tap-highlight-color: transparent;
@@ -108,8 +108,8 @@ button {
 
 .file-desc:hover,
 button:hover {
-  background-color: var(--primary);
-  color: var(--onPrimary);
+  background-color: var(--tertiary);
+  color: var(--onTertiary);
 }
 
 .file-desc:active,

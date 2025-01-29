@@ -8,7 +8,7 @@
         <meta name="description" content="MagiskGapps Maker, convert a normal GApps packing into a Magisk flashble package!">
         <meta name="keywords" content="Magisk, MagiskGApps, GApps, Google Apps, Android apps, android root, root, NikGApps, Magisk Gapps, wacko1805, gapps for magisk, google apps magisk, google apps for magisk, flash gapps in magisk, install google apps in magisk, root, gapps for root, google apps for root, google apps in root, gapps in root">
         <meta name="author" content="Wacko1805">
-        <title>MagiskGApps Maker</title>
+        <title>MagiskGApps Maker | About</title>
         <link rel="stylesheet" href="assets/styles/main.css">
         <script src="assets/js/jquery-3.6.0.min.js"></script>
         <script src="assets/js/jszip.min.js"></script>
@@ -17,13 +17,13 @@
         <script src="https://wacko1805.github.io/MonetWebAdapter/popup/popup.js" defer></script>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9222991553459658"
         crossorigin="anonymous"></script>
+
     </head>
 
     <body>
         <div class="error-box" id="error-box">
             <h3>Please enable JavaScript</h3>
             <p>This site uses JavaScript to function. MagiskGApps scripts use JavaScript, so this sites functions are currently unavaliable until enabled.</p>
-            <a href="about.html">About MagiskGApps</a>
         </div>
 
         <main>
@@ -44,6 +44,15 @@
                     </div>
                 </a>
             </header>
+        <main>
+            <h1>About MagiskGApps</h1>
+            <p>MagiskGApps is a custom GApps package designed specifically for devices running Magisk, a popular root management tool for Android. Unlike traditional GApps packages, MagiskGApps is designed to be flashed through Magisk’s installation process, making it easier for users to install Google apps and services without altering system partitions. This modular approach allows users to install only the Google apps they need, reducing bloat and maintaining system integrity. MagiskGApps ensures compatibility with Magisk’s systemless root, making it an excellent solution for rooted devices that want to retain access to Google services while maintaining flexibility and control over their system.</p>
+            <p>
+                MagiskGApps works by integrating Google apps and services into a systemless environment, meaning it doesn’t modify the system partition. This is made possible by Magisk’s unique root management system, which allows changes to the device’s software without altering the core system files.
+                
+                When you install MagiskGApps, the package is flashed through Magisk’s recovery interface, and it essentially adds Google apps like Play Store, Gmail, and Google Play Services in a way that’s compatible with Magisk's root. The systemless nature means these apps are added in a manner that doesn’t affect the overall integrity of the system partition, ensuring the root remains intact and the device stays customizable.
+                
+                Moreover, MagiskGApps is modular, so users can choose which apps they want to install, providing a more streamlined experience with fewer background processes and less bloat compared to the full Google Apps suite. It also ensures that Google services continue to function on a rooted device while maintaining flexibility for users who want to keep a clean and optimized setup.</p>
 
             <div id="mainheaderbox" class="content-box" >
 
@@ -129,47 +138,7 @@
 
                     <hr>
 
-                    <h1>Get Started</h1>
-
-                    <div class="form-box">
-
-                        <p style="padding-bottom: 10px; margin-top: 5px;">1. Upload your GApps file</p>
-                        
-                        <input type="file" id="zipFileInput" accept="zip,application/octet-stream,application/zip,application/x-zip,application/x-zip-compressed" hidden/>
-
-                        <label class="file-desc" for="zipFileInput">Choose File</label>
-                        <br><br>
-                        <hr>
-                        <p>2. Select the GApps type</p>
-
-                            <div class='inputGroup'>
-                                <input id='NikGapps' type='radio' name='GappsType' value='NikGapps'>
-                                <label for='NikGapps'>
-                                    <span>NikGapps</span>
-                                </label>
-                            </div>
-                
-                            <div class='inputGroup'>
-                                <input id='MindTheGApps' type='radio' name='GappsType' value='MindTheGApps'>
-                                <label for='MindTheGApps'>
-                                    <span>MindTheGApps</apan>
-                                </label>
-                            </div>
-                
-                            <button id="extractButton" class="full-width">
-                                Generate MagiskGApps package
-                            </button>
-                
-                        <p>3. Console:</p>
-
-                            <div class="console">
-                                <p id="info"></p>
-                            </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <h1>FAQ</h1>
+                    <h1>FAQ</h1>
 
             <div class="content-box">
 
@@ -210,8 +179,7 @@
                     <img width="100%" src="assets/images/old-logo.png">
                 </main>
                 <p class="copywrite">
-                    © MagiskGApps 2024 <a class="link" href="about.html">About</a>
-
+                    © MagiskGApps 2024 <a class="link" href="home.html">Home</a>
                 </p>
             </footer>
         <script>

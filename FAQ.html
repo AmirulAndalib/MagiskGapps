@@ -8,7 +8,7 @@
         <meta name="description" content="MagiskGapps Maker, convert a normal GApps packing into a Magisk flashble package!">
         <meta name="keywords" content="Magisk, MagiskGApps, GApps, Google Apps, Android apps, android root, root, NikGApps, Magisk Gapps, wacko1805, gapps for magisk, google apps magisk, google apps for magisk, flash gapps in magisk, install google apps in magisk, root, gapps for root, google apps for root, google apps in root, gapps in root">
         <meta name="author" content="Wacko1805">
-        <title>MagiskGApps Maker</title>
+        <title>MagiskGApps Maker | FAQ</title>
         <link rel="stylesheet" href="assets/styles/main.css">
         <script src="assets/js/jquery-3.6.0.min.js"></script>
         <script src="assets/js/jszip.min.js"></script>
@@ -17,13 +17,13 @@
         <script src="https://wacko1805.github.io/MonetWebAdapter/popup/popup.js" defer></script>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9222991553459658"
         crossorigin="anonymous"></script>
+        
     </head>
 
     <body>
         <div class="error-box" id="error-box">
             <h3>Please enable JavaScript</h3>
             <p>This site uses JavaScript to function. MagiskGApps scripts use JavaScript, so this sites functions are currently unavaliable until enabled.</p>
-            <a href="about.html">About MagiskGApps</a>
         </div>
 
         <main>
@@ -44,6 +44,61 @@
                     </div>
                 </a>
             </header>
+        <main>
+            <h1>FAQ</h1>
+            <ul>
+                <li>
+                    <strong>What is MagiskGApps?</strong>
+                    <p>MagiskGApps is a custom package of Google apps and services designed specifically for devices running Magisk, a popular root management tool. It allows you to install Google apps without modifying the system partition, keeping the device root intact while offering flexibility in which apps to install.</p>
+                </li>
+        
+                <li>
+                    <strong>How does MagiskGApps work?</strong>
+                    <p>MagiskGApps works by leveraging Magisk’s systemless root system. When you install MagiskGApps, it adds Google apps and services through Magisk’s recovery interface, ensuring that these apps do not modify the system partition. This method ensures that your device remains rooted and customizable while keeping the integrity of your system intact.</p>
+                </li>
+        
+                <li>
+                    <strong>What apps are included in MagiskGApps?</strong>
+                    <p>MagiskGApps comes with several Google apps like the Play Store, Gmail, Google Play Services, Google Maps, and others. The package is modular, so you can choose which apps you wish to install based on your preferences, helping you avoid unnecessary bloatware.</p>
+                </li>
+        
+                <li>
+                    <strong>Can I install MagiskGApps on any rooted device?</strong>
+                    <p>MagiskGApps is designed specifically for devices running Magisk. If your device is rooted with Magisk, you can install MagiskGApps. However, it may not be compatible with other root management tools or if the device is not rooted.</p>
+                </li>
+        
+                <li>
+                    <strong>Is MagiskGApps safe to use?</strong>
+                    <p>Yes, MagiskGApps is safe as long as you are using it on a compatible device with Magisk installed. It operates in a systemless environment, meaning it doesn’t alter the core system files, thus preventing the risk of bricking or corrupting the system partition.</p>
+                </li>
+        
+                <li>
+                    <strong>Do I need to wipe my device to install MagiskGApps?</strong>
+                    <p>No, MagiskGApps does not require a factory reset or wiping of data. It can be flashed directly through the Magisk Manager app or recovery without affecting your personal data. However, always make sure to back up your data just in case.</p>
+                </li>
+        
+                <li>
+                    <strong>Can I uninstall MagiskGApps if I no longer need it?</strong>
+                    <p>Yes, MagiskGApps can be uninstalled by simply flashing the Magisk zip again without the GApps package or by removing the apps manually using a file manager. However, it's recommended to use Magisk Manager for a clean removal process.</p>
+                </li>
+        
+                <li>
+                    <strong>Will MagiskGApps work on custom ROMs?</strong>
+                    <p>Yes, MagiskGApps is compatible with most custom ROMs, as long as they support Magisk. It works with AOSP-based, LineageOS, and many other custom Android ROMs.</p>
+                </li>
+        
+                <li>
+                    <strong>Does MagiskGApps affect system updates?</strong>
+                    <p>MagiskGApps does not interfere with system updates because it doesn’t modify the system partition. However, keep in mind that installing updates might require re-flashing MagiskGApps if the update affects the Magisk root or Google services.</p>
+                </li>
+        
+                <li>
+                    <strong>Where can I download MagiskGApps?</strong>
+                    <p>MagiskGApps can be downloaded from trusted sources like the official Magisk GitHub repository or reputable Android forums such as XDA. Be cautious of downloading from unofficial sites to avoid any potential security risks.</p>
+                </li>
+            </ul>            
+                
+                
 
             <div id="mainheaderbox" class="content-box" >
 
@@ -129,47 +184,7 @@
 
                     <hr>
 
-                    <h1>Get Started</h1>
-
-                    <div class="form-box">
-
-                        <p style="padding-bottom: 10px; margin-top: 5px;">1. Upload your GApps file</p>
-                        
-                        <input type="file" id="zipFileInput" accept="zip,application/octet-stream,application/zip,application/x-zip,application/x-zip-compressed" hidden/>
-
-                        <label class="file-desc" for="zipFileInput">Choose File</label>
-                        <br><br>
-                        <hr>
-                        <p>2. Select the GApps type</p>
-
-                            <div class='inputGroup'>
-                                <input id='NikGapps' type='radio' name='GappsType' value='NikGapps'>
-                                <label for='NikGapps'>
-                                    <span>NikGapps</span>
-                                </label>
-                            </div>
-                
-                            <div class='inputGroup'>
-                                <input id='MindTheGApps' type='radio' name='GappsType' value='MindTheGApps'>
-                                <label for='MindTheGApps'>
-                                    <span>MindTheGApps</apan>
-                                </label>
-                            </div>
-                
-                            <button id="extractButton" class="full-width">
-                                Generate MagiskGApps package
-                            </button>
-                
-                        <p>3. Console:</p>
-
-                            <div class="console">
-                                <p id="info"></p>
-                            </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <h1>FAQ</h1>
+                    <h1>FAQ</h1>
 
             <div class="content-box">
 
@@ -210,8 +225,7 @@
                     <img width="100%" src="assets/images/old-logo.png">
                 </main>
                 <p class="copywrite">
-                    © MagiskGApps 2024 <a class="link" href="about.html">About</a>
-
+                    © MagiskGApps 2024 <a class="link" href="home.html">Home</a>
                 </p>
             </footer>
         <script>

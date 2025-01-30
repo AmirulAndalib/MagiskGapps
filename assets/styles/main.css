@@ -173,7 +173,7 @@ h2, h3 {
 }
 
 .collapsible:active {
-  border-radius: var(--radius-sml);
+  border-radius: var(--radius-med);
 }
 
 .open {
@@ -186,7 +186,7 @@ h2, h3 {
 
 .collapsible:after {
   content: '\002B';
-  color: var(--onPrimary);
+  color: var(--primary);
   font-weight: var(--font-weight-coll-content);
   float: right;
   transition: content 0.2s;
@@ -194,6 +194,7 @@ h2, h3 {
 
 .active:after {
   content: '\2212';
+  color: var(--primaryContainer);
 }
 
 .content {

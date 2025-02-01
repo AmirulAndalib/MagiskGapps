@@ -126,8 +126,8 @@ main {
 
 @media screen and (max-width: 850px) {
   main {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
   }
 }
 
@@ -155,10 +155,10 @@ h2, h3 {
   color: var(--onPrimaryContainer);
   width: 100%;
   text-align: left;
-  transition: background-color 0.1s, color 0.1s;
+  transition: background-color 0.1s, color 0.1s, 0.1s;
+
   margin-bottom: 3px;
   padding: 13px 30px;
-  transition: 0.1s;
 }
 
 .collapsible span {
@@ -203,7 +203,10 @@ h2, h3 {
   width: 100%;
   overflow: hidden;
   border-radius: var(--radius-big);
-  transition: max-height 0.2s ease-out;
+  /* transition: max-height 0.2s ease-out; */
+  transition-property: max-height;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
   background-color: var(--secondaryContainer);
   color: var(--onSecondaryContainer);
   margin-bottom: 5px;
@@ -225,7 +228,9 @@ h2, h3 {
 }
 
 .c-closed {
-  border-radius: var(--radius-big);
+  border-radius: var(--radius-med);
+  transition: 0.2s ease-out;
+
 }
 
 .content p {

@@ -134,7 +134,7 @@ $('#extractButton').click(function() {
 
             // Making module.prop
             const customFile = {
-                'module.prop': 'id=MGM \nname=MGM ' + ogZipTitleStripped + ' Modified by MagiskGApps \nversion=v0.1 \nversionCode=17 \nauthor=Wacko1805 \ndescription=MagiskGApps modified version of ' + ogZipTitleStripped + ' @ MagiskGApps.com/maker',
+                'module.prop': 'id=MGM\nname=MGM ' + ogZipTitleStripped + ' Modified by MagiskGApps\nversion=v0.1\nversionCode=17\nauthor=Wacko1805\ndescription=MagiskGApps modified version of ' + ogZipTitleStripped + ' @ MagiskGApps.com/maker',
             };
             Object.keys(customFile).forEach(fileName => {
                 const fileContent = customFile[fileName];

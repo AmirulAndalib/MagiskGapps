@@ -91,6 +91,10 @@
 }
 
 /* File Description Styles */
+.file-desc {
+  margin: 0;
+  padding: 0;
+}
 .file-desc,
 button {
   padding: 15px 30px;
@@ -105,7 +109,17 @@ button {
   transition: background-color 0.05s, color 0.05s, 0.1s;
   -webkit-tap-highlight-color: transparent;
 }
+.upload-button {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
 
+.upload-button p {
+  color: var(--secondary);
+  margin-top: 20px;
+  font-size: 0.7rem;
+}
 .file-desc:hover,
 button:hover {
   background-color: var(--tertiary);

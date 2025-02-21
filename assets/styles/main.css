@@ -370,6 +370,17 @@ footer img {
   padding: 2vw;
 }
 
+.form-box .upload {
+  text-align: center;
+}
+
+.form-box .upload h3 {
+  font-size: 1.7rem;
+  margin: 0;
+  padding-bottom: 10px;
+  color: var(--secondary);
+}
+
 @media screen and (max-width: 850px) {
   .form-box {
     padding: 5vw;
@@ -379,7 +390,10 @@ footer img {
 .form-box hr {
   border: 1px var(--background) solid;
 }
-
+.form-box h3 {
+  color: var(--secondary);
+  font-size: 1.3rem;
+}
 a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;

@@ -198,7 +198,7 @@ h2, h3 {
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0 25px;
   max-height: 0;
   width: 100%;
   overflow: hidden;
@@ -210,6 +210,8 @@ h2, h3 {
   background-color: var(--secondaryContainer);
   color: var(--onSecondaryContainer);
   margin-bottom: 5px;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
 .content ol {
@@ -217,6 +219,8 @@ h2, h3 {
   padding: 5px 25px;
   font-weight: var(--font-weight-coll-content);
 }
+
+
 
 .content b {
   font-weight: 100;
@@ -375,7 +379,8 @@ footer img {
 }
 
 .form-box .upload h3 {
-  font-size: 1.7rem;
+  font-size: 2rem;
+  font-family: 'Tilt Warp', cursive;
   margin: 0;
   padding-bottom: 10px;
   color: var(--secondary);
@@ -392,7 +397,9 @@ footer img {
 }
 .form-box h3 {
   color: var(--secondary);
-  font-size: 1.3rem;
+  font-family: 'Tilt Warp', cursive;
+
+  font-size: 1.5rem;
 }
 a {
   text-decoration: none;
